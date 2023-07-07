@@ -1,0 +1,107 @@
+<html>
+    
+<head>
+<title>Давайте полетаем)</title>
+</head>
+
+<body>
+    <style>
+    body{
+		background-attachment: fixed;
+        font-family: Verdana;
+        color: #0d0d0e;
+        font-size: 125%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+     }
+    rating{
+        font-size: 60%;
+        font-family: 'Courier New', Courier, monospace;
+        color: #0d0d0e;
+        position: fixed;
+        left: 1180px;
+        top: 700px;
+        width: 430px;
+        height: 100px;
+    }
+     
+    body{
+        
+        background:url(https://phonoteka.org/uploads/posts/2022-06/1656591493_51-phonoteka-org-p-samolet-oboi-na-telefon-55.jpg) fixed; 
+        background-size:cover;
+    }
+    form{
+            padding-top: 20px; 
+            padding-bottom: 15px;
+            background: rgba(249, 194, 111, 0.5);
+            position: center;
+            width: 800px;
+            height: 450px;
+            left: 280px;
+            top: 100px;
+            border: 2px solid #000000;
+    }
+    input{
+        border: 0;
+        border-bottom: 2px solid #000;
+        background-color: rgba(249, 194, 111, 0.5)
+    }
+    select{
+        border: 1;
+        border-bottom: 2px solid #000;
+        border-top: 2px solid #000;
+        border-left: 2px solid #000;
+        border-right: 2px solid #000;
+        background-color: rgba(249, 194, 111, 0.5);
+        outline: 0; 
+    }
+    button{
+        border: 1;
+        border-bottom: 2px solid #000;
+        border-top: 2px solid #000;
+        border-left: 2px solid #000;
+        border-right: 2px solid #000;
+        background-color: rgba(255,255,255, 0.9);
+        outline: 0; 
+    }
+      </style>
+    
+<form action="form.php" method="post">
+    <label for="please">
+        <b><i>введите</i> данные <i>о</i> перелёте</b><br/>
+    </label>
+    <br/>
+
+    <label for="flight_number">
+       ⦁ Введите номер рейса:
+        <input type="text" name="flight_number" id="flight_number">
+    </label><br/>
+    <label for="destination">
+       ⦁ Ваше место назначения:
+        <input type="text" name="destination" id="destination">
+    </label><br/>
+    <label for="departure_time">
+       ⦁ Время отправления:
+        <input type="time" name="departure_time" id="departure_time">
+    </label><br/>
+    <label for="departure date">
+       ⦁ Дата, когда была проведена последняя операция:
+        <input type="date" name="departure date" id="departure date" min="2022-01-01" max="2023-01-01">
+    </label><br/>
+    <label for="ticket price">
+        ⦁ Цена вашего билета:
+         <input type="number" name="ticket price" id="ticket price">
+     </label><br/>
+     <label for="number_of_seats">
+        ⦁ Количество мест:
+         <input type="number" name="number_of_seats" id="number_of_seats">
+     </label><br/><br/>
+     
+    <label for="send">
+    <div class="submit>"><button><input type="submit" name="" value="Отправить"></button><br/></div>
+    
+</form>
+</body>
+</html>
